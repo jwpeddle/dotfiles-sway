@@ -61,6 +61,7 @@ set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME/ripgrep/config"
 starship init fish | source
 
 # ******************** functions ********************
+alias sudo "sudo -E"
 alias update "sudo aura -Syyux && sudo aura -Ayyux"
 alias icat "kitty +kitten icat"
 alias dc "docker-compose"
