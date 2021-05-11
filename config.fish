@@ -7,28 +7,31 @@ set -x EDITOR "nvim"
 set -x TERM "xterm-kitty"
 
 # paths
-fish_add_path "$HOME/.local/bin"
+set -x PATH "~/.local/bin" $PATH
 set -x XDG_CONFIG_HOME "$HOME/.config"
 
 # make capslock ctrl
 set -x XKB_DEFAULT_OPTIONS "ctrl:nocaps"
 
-# ******************** other configs ********************
-
 # run ssh-agent automatically
 fish_ssh_agent
+
+# ******************** other configs ********************
 
 # bat
 set -x BAT_THEME "Dracula"
 
 # direnv
-direnv hook fish | source
+if type -q direnv
+  direnv hook fish | source
+end
 
 # fzf
 function fish_user_key_bindings
   fish_vi_key_bindings
   fzf_key_bindings
 end
+
 set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
   --layout=reverse
   --no-info
@@ -40,19 +43,22 @@ set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
 "
 
 # go
-set -x GOPATH "$HOME/go"
-fish_add_path "$GOPATH/bin"
+set -x GOPATH "~/go"
+set -x PATH "$GOPATH/bin" $PATH
 
 # node
 set -x NPM_CONFIG_PREFIX "$HOME/.node_modules"
-fish_add_path "$NPM_CONFIG_PREFIX/bin"
+set -x PATH "$NPM_CONFIG_PREFIX/bin" $PATH
 
 # python / pyenv
 set -x PYTHONDONTWRITEBYTECODE "1"
-set -x PYENV_ROOT "$HOME/.pyenv"
-fish_add_path "$PYENV_ROOT/bin"
-status --is-interactive; and pyenv init - | source
-status --is-interactive; and pyenv virtualenv-init - | source
+
+if type -q pyenv
+  set -x PYENV_ROOT "$HOME/.pyenv"
+  set -x PATH "$PYENV_ROOT/bin" $PATH
+  status --is-interactive; and pyenv init - | source
+  status --is-interactive; and pyenv virtualenv-init - | source
+end
 
 # ripgrep
 set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME/ripgrep/config"
