@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      force: true
+      recursive: true
+
+- link:
+    ~/.gitconfig: gitconfig
+    ~/.config/fish/config.fish: config/fish/config.fish
+    ~/.config/fish/fish_plugins: config/fish/fish_plugins
+    ~/.config/broot/conf.hjson: config/broot/conf.hjson
+    ~/.config/ripgrep/config: config/ripgrep/config
