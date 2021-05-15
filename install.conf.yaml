@@ -18,4 +18,5 @@
     ~/.config/nvim/coc.vim: nvim/coc.vim
     ~/.config/nvim/init.vim: nvim/init.vim
     ~/.config/ripgrep/config: config/ripgrep/config
+    ~/.config/sway/config: config/sway/config
     ~/.gitconfig: gitconfig
