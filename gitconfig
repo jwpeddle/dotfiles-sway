@@ -1,0 +1,15 @@
+[core]
+	pager = "nvim -R"
+[user]
+	name = Jason Peddle
+	email = jason@typh.com
+[color]
+	ui = auto
+	pager = no
+[push]
+	default = current
+[core]
+	filemode = true
+[merge]
+[delta]
+	syntax-theme = Dracula
