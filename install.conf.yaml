@@ -16,3 +16,5 @@
     ~/.config/fish/fish_plugins: config/fish/fish_plugins
     ~/.config/broot/conf.hjson: config/broot/conf.hjson
     ~/.config/ripgrep/config: config/ripgrep/config
+    ~/.config/nvim/init.vim: config/nvim/init.vim
+    ~/.config/nvim/coc.vim: config/nvim/coc.vim
