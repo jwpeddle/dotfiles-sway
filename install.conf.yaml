@@ -11,10 +11,11 @@
       recursive: true
 
 - link:
-    ~/.gitconfig: gitconfig
+    ~/.config/broot/conf.hjson: config/broot/conf.hjson
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/fish_plugins: config/fish/fish_plugins
-    ~/.config/broot/conf.hjson: config/broot/conf.hjson
+    ~/.config/nvim/coc-settings.json: nvim/coc-settings.json
+    ~/.config/nvim/coc.vim: nvim/coc.vim
+    ~/.config/nvim/init.vim: nvim/init.vim
     ~/.config/ripgrep/config: config/ripgrep/config
-    ~/.config/nvim/init.vim: config/nvim/init.vim
-    ~/.config/nvim/coc.vim: config/nvim/coc.vim
+    ~/.gitconfig: gitconfig
