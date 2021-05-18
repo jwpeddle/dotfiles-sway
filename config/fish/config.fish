@@ -92,7 +92,7 @@ function hello
   set --erase argv[1]
 
   switch $sub_command
-    case "cd"
+    case ""
       cd $hellodir
 
     case "manage.py"
@@ -108,6 +108,7 @@ function hello
       end
   end
 end
+complete -f -c hello -a "cd manage.py"
 
 
 function hello-servers
