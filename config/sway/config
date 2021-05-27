@@ -25,7 +25,7 @@ font pango:DejaVu Sans Mono 10
 
 
 # Wallpaper
-output * bg ~/.config/background-tile.png tile
+output * bg ~/.config/images/background-tile.png tile
 output eDP-1 scale 1 position 0,0 mode 2560x1440
 
 # Auto-configure displays
