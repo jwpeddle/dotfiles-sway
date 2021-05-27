@@ -14,7 +14,11 @@ set -x XDG_CONFIG_HOME "$HOME/.config"
 set -x XKB_DEFAULT_OPTIONS "ctrl:nocaps"
 
 # run ssh-agent automatically
-fish_ssh_agent
+if type -q fish_ssh_agent
+  fish_ssh_agent
+else
+  echo "fish plugins not installed, install fisher and run `fisher update`"
+end
 
 # ******************** Key bindings ********************
 # fzf
@@ -70,7 +74,11 @@ end
 set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME/ripgrep/config"
 
 # starship
-starship init fish | source
+if type -q starship
+  starship init fish | source
+else
+  echo "starship not found"
+end
 
 # ******************** functions ********************
 alias sudo "sudo -E"
