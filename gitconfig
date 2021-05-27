@@ -11,5 +11,4 @@
 [core]
 	filemode = true
 [merge]
-[delta]
-	syntax-theme = Dracula
+	conflictstyle = diff3

@@ -50,6 +50,7 @@ set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
 # go
 set -x GOPATH "~/go"
 set -x PATH "$GOPATH/bin" $PATH
+set -x GIT_TERMINAL_PROMPT 1
 
 # node
 set -x NPM_CONFIG_PREFIX "$HOME/.node_modules"
@@ -77,8 +78,7 @@ alias update "sudo aura -Syyux && sudo aura -Ayyux"
 alias icat "kitty +kitten icat"
 alias dc "docker-compose"
 alias dc-run "dc run --rm"
-alias manage "dc-run api ./manage.py"
-#alias hello "cd ~/dev/hello"
+alias reload "source ~/.config/fish/config.fish"
 
 function fish_mode_prompt; end
 
@@ -102,7 +102,9 @@ function hello
         case "shell"
           $hellodir/api/manage.py shell_plus --ptipython $argv
         case "test"
-          $hellodir/api/manage.py test --nomigrations --no-input $argv
+          python -Wa -b $hellodir/api/manage.py test --nomigrations --no-input $argv
+        case "runserver"
+          $hellodir/api/manage.py runserver 0.0.0.0:3001
         case "*"
           $hellodir/api/manage.py $manage_command $argv
       end
