@@ -12,6 +12,7 @@
 
 - link:
     ~/.config/broot/conf.hjson: config/broot/conf.hjson
+    ~/.config/kitty/kitty.conf: config/kitty/kitty.conf
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/fish_plugins: config/fish/fish_plugins
     ~/.config/nvim/coc-settings.json: nvim/coc-settings.json
