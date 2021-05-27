@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Chrome
+Comment=Access the Internet
+StartupWMClass=Google-chrome
+Exec=env /usr/bin/google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland --force-device-scale-factor=1.5 %U
+StartupNotify=true
+Terminal=false
+Icon=google-chrome
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=x-scheme-handler/bitcoin;x-scheme-handler/unknown;x-scheme-handler/about;application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
