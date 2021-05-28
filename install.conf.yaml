@@ -3,6 +3,7 @@
       create: true
       relink: true
       glob: true
+      force: true
 
 - clean:
     ~/:
@@ -14,7 +15,7 @@
 - link:
     ~/.config/images: config/images
     ~/.config/broot/conf.hjson: config/broot/conf.hjson
-    ~/.config/kitty/kitty.conf: config/kitty/kitty.conf
+    ~/.config/kitty: config/kitty/*
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/fish/fish_plugins: config/fish/fish_plugins
     ~/.config/kanshi/config: config/kanshi/config
@@ -25,5 +26,5 @@
     ~/.config/sway/config: config/sway/config
     ~/.config/waybar/config: config/waybar/config
     ~/.config/waybar/style.css: config/waybar/style.css
-    ~/.local/share/applications: local/share/applications/*
+    ~/.local/share/applications: local/share/applications
     ~/.gitconfig: gitconfig
