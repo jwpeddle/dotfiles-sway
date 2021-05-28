@@ -7,7 +7,7 @@ set -x EDITOR "nvim"
 set -x TERM "xterm-kitty"
 
 # paths
-set -x PATH "~/.local/bin" $PATH
+set -x PATH "$HOME/.local/bin" $PATH
 set -x XDG_CONFIG_HOME "$HOME/.config"
 
 # make capslock ctrl
@@ -52,7 +52,7 @@ set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
 "
 
 # go
-set -x GOPATH "~/go"
+set -x GOPATH "$HOME/go"
 set -x PATH "$GOPATH/bin" $PATH
 set -x GIT_TERMINAL_PROMPT 1
 
@@ -86,7 +86,7 @@ alias update "sudo aura -Syyux && sudo aura -Ayyux"
 alias icat "kitty +kitten icat"
 alias dc "docker-compose"
 alias dc-run "dc run --rm"
-alias reload "source ~/.config/fish/config.fish"
+alias reload "source $HOME/.config/fish/config.fish"
 
 function fish_mode_prompt; end
 
