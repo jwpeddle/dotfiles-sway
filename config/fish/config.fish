@@ -66,7 +66,8 @@ set -x PYTHONDONTWRITEBYTECODE "1"
 if type -q pyenv
   set -x PYENV_ROOT "$HOME/.pyenv"
   set -x PATH "$PYENV_ROOT/bin" $PATH
-  status --is-interactive; and pyenv init - | source
+  status is-login; and pyenv init --path | source
+  pyenv init - | source
   status --is-interactive; and pyenv virtualenv-init - | source
 end
 
