@@ -3,7 +3,7 @@ Version=1.0
 Name=Chrome
 Comment=Access the Internet
 StartupWMClass=Google-chrome
-Exec=env /usr/bin/google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland --force-device-scale-factor=1.5 %U
+Exec=env /usr/bin/google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland %U
 StartupNotify=true
 Terminal=false
 Icon=google-chrome
