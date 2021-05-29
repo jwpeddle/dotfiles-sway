@@ -13,18 +13,17 @@
       recursive: true
 
 - link:
-    ~/.config/images: config/images
-    ~/.config/broot/conf.hjson: config/broot/conf.hjson
-    ~/.config/kitty: config/kitty/*
-    ~/.config/fish/config.fish: config/fish/config.fish
-    ~/.config/fish/fish_plugins: config/fish/fish_plugins
-    ~/.config/kanshi/config: config/kanshi/config
-    ~/.config/nvim/coc-settings.json: nvim/coc-settings.json
-    ~/.config/nvim/coc.vim: nvim/coc.vim
-    ~/.config/nvim/init.vim: nvim/init.vim
-    ~/.config/ripgrep/config: config/ripgrep/config
-    ~/.config/sway/config: config/sway/config
-    ~/.config/waybar/config: config/waybar/config
-    ~/.config/waybar/style.css: config/waybar/style.css
-    ~/.local/share/applications: local/share/applications
-    ~/.gitconfig: gitconfig
+    ~/.config/images: images
+    ~/.config/broot/conf.hjson: broot/conf.hjson
+    ~/.config/kitty: kitty/*
+    ~/.config/fish: fish/*
+    ~/.config/kanshi/config: kanshi/config
+    ~/.config/nvim: nvim/*
+    ~/.config/ripgrep/config: ripgrep/config
+    ~/.config/sway/config: sway/config
+    ~/.config/waybar: waybar/*
+    ~/.local/share/applications: desktop
+    ~/.gitconfig: git/gitconfig
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
