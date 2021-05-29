@@ -31,6 +31,9 @@ output eDP-1 scale 1 position 0,0 mode 2560x1440
 # Auto-configure displays
 exec_always kanshi
 
+# Notifications
+exec mako
+
 # Spacing
 gaps inner 5
 gaps outer 5
@@ -221,6 +224,7 @@ bar {
   swaybar_command waybar
 }
 
+### Custom keybindings
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
@@ -230,6 +234,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Other useful keybinds
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2
+
+bindsym $mod+e exec wofi-emoji
 
 bindsym Print exec grim -g "$(slurp)" - | wl-copy
 
