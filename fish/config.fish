@@ -41,6 +41,7 @@ if type -q direnv
   direnv hook fish | source
 end
 
+# fzf
 set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
   --layout=reverse
   --no-info
@@ -50,6 +51,8 @@ set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
   --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
   --preview 'bat --color=always --style=header,grid --line-range :300 {}'
 "
+set -x FZF_DEFAULT_COMMAND "fd --file"
+set -x FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
 
 # go
 set -x GOPATH "$HOME/go"
@@ -88,6 +91,16 @@ alias icat "kitty +kitten icat"
 alias dc "docker-compose"
 alias dc-run "dc run --rm"
 alias reload "source $HOME/.config/fish/config.fish"
+alias fd "fd\
+  --hidden\
+  --no-ignore\
+  --exclude '.cache'\
+  --exclude '.git'\
+  --exclude '.pyenv'\
+  --exclude '__pycache__'\
+  --exclude 'dotbot'\
+  --exclude 'node_modules'\
+"
 
 function fish_mode_prompt; end
 
