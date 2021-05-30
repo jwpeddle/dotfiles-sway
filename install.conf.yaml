@@ -11,6 +11,9 @@
     ~/.config:
       force: true
       recursive: true
+    ~/.local:
+      force: true
+      recursive: true
 
 - link:
     ~/.config/images: images
@@ -23,7 +26,6 @@
     ~/.config/sway/config: sway/config
     ~/.config/waybar: waybar/*
     ~/.config/wofi/style.css: wofi/style.css
-    ~/.local/share/applications: desktop
     ~/.gitconfig: git/gitconfig
 
 - shell:
