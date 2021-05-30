@@ -1,0 +1,1 @@
+cd ~/dotfiles && kitty nvim -c ":NERDTreeToggle"
