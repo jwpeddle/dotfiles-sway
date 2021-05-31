@@ -1,1 +1,1 @@
-qutebrowser
+env QT_QPA_PLATFORM=wayland qutebrowser
