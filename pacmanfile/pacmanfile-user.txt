@@ -32,3 +32,4 @@ slurp
 grim
 gitwatch-git
 insync
+dropbox-cli
