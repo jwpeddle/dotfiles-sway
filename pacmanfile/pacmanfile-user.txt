@@ -34,3 +34,4 @@ gitwatch-git
 insync
 dropbox-cli
 wev
+qutebrowser
