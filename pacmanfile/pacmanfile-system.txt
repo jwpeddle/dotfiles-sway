@@ -34,3 +34,4 @@ xdg-utils
 etckeeper
 ttf-liberation
 pavucontrol
+qt5-wayland
