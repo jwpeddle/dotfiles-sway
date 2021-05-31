@@ -38,4 +38,3 @@ qt5-wayland
 ctags
 npm
 strace
-xorg-xwayland
