@@ -30,3 +30,4 @@ wofi
 xcursor-vanilla-dmz
 slurp
 grim
+gitwatch-git
