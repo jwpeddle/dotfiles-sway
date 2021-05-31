@@ -247,5 +247,5 @@ bindsym $mod+e exec wofi-emoji
 
 bindsym Print exec grim -g "$(slurp)" - | wl-copy
 
-include ~/.config/sway/vim-mode
+include ~/.config/sway/vim
 include /etc/sway/config.d/*
