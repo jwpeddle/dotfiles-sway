@@ -33,3 +33,4 @@ wl-clipboard
 xdg-utils
 etckeeper
 ttf-liberation
+pavucontrol
