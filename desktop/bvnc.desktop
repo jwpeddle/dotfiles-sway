@@ -1,4 +1,5 @@
 [Desktop Entry]
+NoDisplay=true
 Version=1.0
 Name[bg]=Преглед с Avahi на сървърите за VNC
 Name[ca]=Eina d'exploració de servidors de VNC de l'Avahi
