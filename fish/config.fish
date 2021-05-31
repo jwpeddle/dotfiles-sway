@@ -7,7 +7,7 @@ set -x EDITOR "nvim"
 set -x TERM "xterm-kitty"
 
 # paths
-set -x PATH "$HOME/.local/bin" $PATH
+fish_add_path "$HOME/.local/bin"
 set -x XDG_CONFIG_HOME "$HOME/.config"
 
 # make capslock ctrl
@@ -51,24 +51,24 @@ set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
   --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
   --preview 'bat --color=always --style=header,grid --line-range :300 {}'
 "
-set -x FZF_DEFAULT_COMMAND "fd --file"
+set -x FZF_DEFAULT_COMMAND "fd --type f"
 set -x FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
 
 # go
 set -x GOPATH "$HOME/go"
-set -x PATH "$GOPATH/bin" $PATH
+fish_add_path "$GOPATH/bin"
 set -x GIT_TERMINAL_PROMPT 1
 
 # node
 set -x NPM_CONFIG_PREFIX "$HOME/.node_modules"
-set -x PATH "$NPM_CONFIG_PREFIX/bin" $PATH
+fish_add_path "$NPM_CONFIG_PREFIX/bin"
 
 # python / pyenv
 set -x PYTHONDONTWRITEBYTECODE "1"
 
 if type -q pyenv
   set -x PYENV_ROOT "$HOME/.pyenv"
-  set -x PATH "$PYENV_ROOT/bin" $PATH
+  fish_add_path "$PYENV_ROOT/bin"
   status is-login; and pyenv init --path | source
   pyenv init - | source
   status --is-interactive; and pyenv virtualenv-init - | source
@@ -108,6 +108,18 @@ function kitty-tab
   kitty @ new-window --new-tab --cwd $PWD --keep-focus --no-response --tab-title $argv[1] sh -c "$argv[2]; exec fish"
 end
 
+function pacinstall -a package category
+  set -q category[1]
+  or set category "triage"
+  if rg "^$package\$" ~/dotfiles/pacmanfile/ &> /dev/null
+    echo "Package already installed"
+  else
+    echo "Installing $package"
+    echo $package >> ~/dotfiles/pacmanfile/pacmanfile-$category.txt
+    pacmanfile sync
+  end
+end
+
 set hellodir "$HOME/dev/hello"
 function hello
   set sub_command $argv[1]
@@ -133,7 +145,6 @@ function hello
   end
 end
 complete -f -c hello -a "cd manage.py"
-
 
 function hello-servers
   cd $HOME/dev/hello
