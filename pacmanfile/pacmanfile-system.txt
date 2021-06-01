@@ -38,3 +38,4 @@ qt5-wayland
 ctags
 npm
 strace
+rsync
