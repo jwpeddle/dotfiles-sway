@@ -39,3 +39,4 @@ ctags
 npm
 strace
 rsync
+python-pip
