@@ -1,4 +1,0 @@
-/usr/bin/google-chrome-stable
-  --enable-features=UseOzonePlatform
-  --ozone-platform=wayland
-  --profile-directory='Default'
