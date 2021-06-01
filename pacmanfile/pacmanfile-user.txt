@@ -35,4 +35,4 @@ insync
 dropbox-cli
 wev
 qutebrowser
-emacs
+emacs-gcc-wayland-devel-bin
