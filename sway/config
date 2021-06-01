@@ -60,10 +60,10 @@ input "type:pointer" {
     pointer_accel 1
 }
 
-seat seat0 xcursor_theme "Vanilla-DMZ" 32
+seat seat0 xcursor_theme "Vanilla-DMZ" 64
 exec_always {
     gsettings set org.gnome.desktop.interface cursor-theme 'Vanilla-DMZ'
-    gsettings set org.gnome.desktop.interface cursor-size '32'
+    gsettings set org.gnome.desktop.interface cursor-size '64'
 }
 
 ### Key bindings
