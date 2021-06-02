@@ -18,7 +18,7 @@ bindswitch lid:off output $laptop enable
 set $term kitty
 
 # App launcher
-set $menu "wofi --show drun --allow-images --insensitive --width=500 --lines=10"
+set $menu "wofi --show drun --allow-images --image-size=100 --insensitive --width=500 --lines=10"
 #set $menudir ~/dotfiles/dmenu
 #set $menu "\
 #  ls $menudir\
