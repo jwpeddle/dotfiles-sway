@@ -36,3 +36,4 @@ dropbox-cli
 wev
 qutebrowser
 emacs-gcc-wayland-devel-bin
+direnv
