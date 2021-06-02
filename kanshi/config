@@ -1,5 +1,5 @@
 {
-  output "Dell Inc. DELL P2715Q X24K1736273L" scale 2 mode 3840x2160
+  output "Dell Inc. DELL P2715Q X24K1736273L" scale 1.5 mode 3840x2160
   # output "Dell Inc. DELL P2715Q X24K1736273L" scale 1 mode 3840x2160
 }
 
