@@ -29,7 +29,7 @@ set $menu "wofi --show drun --allow-images --image-size=200 --insensitive --widt
 #"
 
 # Font
-font pango:DejaVu Sans Mono 20
+font pango:DejaVu Sans Mono 10
 
 
 # Wallpaper
