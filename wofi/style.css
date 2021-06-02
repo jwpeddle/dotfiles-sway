@@ -5,6 +5,10 @@ background-color: #282a36;
 font-size: 48px;
 }
 
+#img {
+width: 100px;
+}
+
 #input {
 margin: 5px;
 border: none;
