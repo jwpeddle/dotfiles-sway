@@ -65,7 +65,7 @@ exec_always {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+Shift+Return exec $term
+    bindsym $mod+Shift+Return exec $nvimterm
 
     # Kill focused window
     #bindsym $mod+Shift+q kill
