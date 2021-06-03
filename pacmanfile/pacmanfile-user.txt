@@ -38,3 +38,4 @@ qutebrowser
 emacs-gcc-wayland-devel-bin
 direnv-bin
 mysql-clients
+alacritty
