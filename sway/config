@@ -19,14 +19,6 @@ set $term kitty nvim term://fish
 
 # App launcher
 set $menu "wofi --show drun --allow-images --image-size=200 --insensitive --width=500 --lines=10"
-#set $menudir ~/dotfiles/dmenu
-#set $menu "\
-#  ls $menudir\
-#  | wofi --show=dmenu --insensitive --width=500 --lines=10\
-#  | xargs -i cat ~/dotfiles/dmenu/{}\
-#  | tr '\n' ' '\
-#  | xargs swaymsg exec --\
-#"
 
 # Font
 font pango:DejaVu Sans Mono 10
