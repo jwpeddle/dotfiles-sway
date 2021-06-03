@@ -15,7 +15,7 @@ bindswitch lid:on output $laptop disable
 bindswitch lid:off output $laptop enable
 
 # Terminal
-set $term kitty
+set $term kitty nvim term://fish
 
 # App launcher
 set $menu "wofi --show drun --allow-images --image-size=200 --insensitive --width=500 --lines=10"
