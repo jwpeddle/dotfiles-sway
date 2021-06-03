@@ -17,7 +17,7 @@
 
 - link:
     ~/.config/images: images
-    ~/.config/broot/conf.hjson: broot/conf.hjson
+    ~/.config/broot: broot/*
     ~/.config/kitty: kitty/*
     ~/.config/fish: fish/*
     ~/.config/kanshi/config: kanshi/config
