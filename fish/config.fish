@@ -85,6 +85,12 @@ else
 end
 
 # ******************** functions ********************
+function fish_mode_prompt; end
+
+function postexec --on-event fish_postexec
+  echo
+end
+
 alias sudo "sudo -E"
 alias update "sudo aura -Syyux && sudo aura -Ayyux"
 alias icat "kitty +kitten icat"
@@ -101,12 +107,6 @@ alias fd "fd\
   --exclude 'dotbot'\
   --exclude 'node_modules'\
 "
-
-function fish_mode_prompt; end
-
-function postexec --on-event fish_postexec
-  echo
-end
 
 function kitty-tab
   kitty @ new-window --new-tab --cwd $PWD --keep-focus --no-response --tab-title $argv[1] sh -c "$argv[2]; exec fish"
