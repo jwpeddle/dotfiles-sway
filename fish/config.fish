@@ -20,7 +20,8 @@ else
   echo "fish plugins not installed, install fisher and run `fisher update`"
 end
 
-set -x fish_term24bit 0
+# make colors work right in nvim?
+set -x fish_term24bit 1
 
 # ******************** Key bindings ********************
 # fzf
