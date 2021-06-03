@@ -104,6 +104,8 @@ alias fd "fd\
 
 function fish_mode_prompt; end
 
+function fish_postexec; echo; end
+
 function kitty-tab
   kitty @ new-window --new-tab --cwd $PWD --keep-focus --no-response --tab-title $argv[1] sh -c "$argv[2]; exec fish"
 end
