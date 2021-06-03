@@ -78,11 +78,11 @@ end
 set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME/ripgrep/config"
 
 # starship
-#if type -q starship
-#  starship init fish | source
-#else
-#  echo "starship not found"
-#end
+if type -q starship
+  starship init fish | source
+else
+  echo "starship not found"
+end
 
 # ******************** functions ********************
 alias sudo "sudo -E"
