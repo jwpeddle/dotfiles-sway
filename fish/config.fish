@@ -20,6 +20,8 @@ else
   echo "fish plugins not installed, install fisher and run `fisher update`"
 end
 
+set -x fish_term24bit 1
+
 # ******************** Key bindings ********************
 # fzf
 function fish_user_key_bindings
