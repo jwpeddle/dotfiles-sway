@@ -29,6 +29,7 @@
     ~/.config/waybar: waybar/*
     ~/.config/wofi/style.css: wofi/style.css
     ~/.local/share/applications: desktop/*
+    ~/.pdbrc.py: pdbpp/pdbrc.py
     ~/.gitconfig: git/gitconfig
 
 - shell:
