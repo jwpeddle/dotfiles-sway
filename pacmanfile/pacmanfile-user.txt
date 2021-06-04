@@ -37,5 +37,5 @@ wev
 qutebrowser
 emacs-gcc-wayland-devel-bin
 direnv-bin
-mysql-clients
+mariadb-clients
 alacritty
