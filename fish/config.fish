@@ -38,6 +38,7 @@ end
 
 # bat
 set -x BAT_THEME "Dracula"
+set -x COLORTERM = "truecolor"
 
 # direnv
 set -x DIRENV_LOG_FORMAT ""
