@@ -39,3 +39,4 @@ emacs-gcc-wayland-devel-bin
 direnv-bin
 mariadb-clients
 alacritty
+imagemagick-full
