@@ -2,7 +2,7 @@
 Name=HTTP Toolkit
 Comment=HTTP(S) debugging proxy, analyzer and client
 GenericName=HTTP Toolkit
-Exec=httptoolkit --enable-features=UseOzonePlatform --ozone-platform=wayland %U
+Exec="httptoolkit --enable-features=UseOzonePlatform --ozone-platform=wayland" %U
 Icon=httptoolkit
 Type=Application
 StartupNotify=true
