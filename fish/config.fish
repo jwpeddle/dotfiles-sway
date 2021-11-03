@@ -145,7 +145,7 @@ function hello
         case "shell"
           $hellodir/api/manage.py shell_plus --ptipython $argv
         case "test"
-          python -Wa -b $hellodir/api/manage.py test --nomigrations --no-input $argv
+          python -b $hellodir/api/manage.py test --nomigrations --no-input $argv
         case "runserver"
           $hellodir/api/manage.py runserver 0.0.0.0:3001
         case "*"
