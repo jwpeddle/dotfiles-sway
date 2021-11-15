@@ -25,7 +25,7 @@ sway
 tldr
 ttf-font-awesome
 vim
-waybar
+waybar-git
 wofi
 xcursor-vanilla-dmz
 slurp
