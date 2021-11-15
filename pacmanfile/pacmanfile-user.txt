@@ -37,4 +37,3 @@ wev
 qutebrowser
 direnv-bin
 mariadb-clients
-imagemagick-full
