@@ -37,4 +37,4 @@ wev
 qutebrowser
 direnv-bin
 mariadb-clients
-adobe-sourcecode-pro-fonts
+adobe-source-code-pro-fonts
