@@ -35,7 +35,6 @@ insync
 dropbox-cli
 wev
 qutebrowser
-emacs-gcc-wayland-devel-bin
 direnv-bin
 mariadb-clients
 imagemagick-full
