@@ -21,7 +21,7 @@
     ~/.config/kitty: kitty/*
     ~/.config/fish: fish/*
     ~/.config/kanshi/config: kanshi/config
-    ~/.config/nvim: nvim/*
+    ~/.config/nvim: nvim/**
     ~/.config/pacmanfile: pacmanfile/*
     ~/.config/ripgrep/config: ripgrep/config
     ~/.config/starship.toml: starship/starship.toml
