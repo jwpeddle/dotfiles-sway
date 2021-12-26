@@ -129,7 +129,7 @@ function pacinstall -a package category
   end
 end
 
-set hellodir "$HOME/dev/hello/api"
+set hellodir "$HOME/dev/hello"
 function hello
   set sub_command $argv[1]
   set --erase argv[1]
