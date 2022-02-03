@@ -70,6 +70,7 @@ fish_add_path "$NPM_CONFIG_PREFIX/bin"
 
 # python / pyenv
 set -x PYTHONDONTWRITEBYTECODE "1"
+set -x PYTHONSTARTUP
 
 if type -q pyenv
   set -x PYENV_ROOT "$HOME/.pyenv"
