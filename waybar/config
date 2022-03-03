@@ -12,11 +12,11 @@
       "network",
       "cpu",
       "memory",
-      "temperature",
-      "backlight",
-      "battery",
-      "clock",
-      "tray",
+      //"temperature",
+      //"backlight",
+      //"battery",
+      //"clock",
+      //"tray",
     ],
     // Modules configuration
     // "sway/workspaces": {
