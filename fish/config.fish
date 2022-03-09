@@ -155,11 +155,3 @@ function hello
   end
 end
 complete -f -c hello -a "cd manage.py"
-
-function hello-servers
-  cd $HOME/dev/hello
-  kitty @ set-tab-title api
-  kitty-tab web "docker-compose up web"
-  kitty-tab autonomous "docker-compose up autonomous-worker"
-  docker-compose up api
-end
