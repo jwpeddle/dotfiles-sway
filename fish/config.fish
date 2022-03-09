@@ -144,13 +144,13 @@ function hello
       set --erase argv[1]
       switch $manage_command
         case "shell"
-          $hellodir/api/manage.py shell_plus --ptipython $argv
+          $hellodir/src/manage.py shell_plus --ptipython $argv
         case "test"
-          python $hellodir/api/manage.py test --nomigrations --no-input $argv
+          python $hellodir/src/manage.py test --nomigrations --no-input $argv
         case "runserver"
-          $hellodir/api/manage.py runserver 0.0.0.0:3001
+          $hellodir/src/manage.py runserver 0.0.0.0:3001
         case "*"
-          $hellodir/api/manage.py $manage_command $argv
+          $hellodir/src/manage.py $manage_command $argv
       end
   end
 end
