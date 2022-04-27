@@ -152,7 +152,7 @@ function hello
       set --erase argv[1]
       switch $manage_command
         case "shell"
-          $hellodir/src/manage.py shell_plus --ptipython $argv
+          $hellodir/src/manage.py shell_plus --ipython $argv
         case "runserver"
           $hellodir/src/manage.py runserver 0.0.0.0:3001
         case "*"
