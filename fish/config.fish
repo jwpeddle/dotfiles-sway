@@ -143,7 +143,7 @@ function hello
       docker compose up api
 
     case "test"
-      pytest src/$argv
+      pytest src $argv
 
     case "manage.py"
       set manage_command $argv[1]
