@@ -161,4 +161,3 @@ function hello
 end
 alias h "hello"
 complete -f -c hello -a "cd test manage.py"
-complete -c hello manage.py -w python manage.py
