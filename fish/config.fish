@@ -160,4 +160,4 @@ function hello
   end
 end
 alias h "hello"
-complete -f -c hello -a "cd manage.py"
+complete -f -c hello -a "cd test manage.py"
