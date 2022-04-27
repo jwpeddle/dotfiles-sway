@@ -159,4 +159,5 @@ function hello
       end
   end
 end
+alias hello h
 complete -f -c hello -a "cd manage.py"
