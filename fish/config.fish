@@ -139,6 +139,9 @@ function hello
     case ""
       cd $hellodir
 
+    case "up"
+      docker compose up api
+
     case "test"
       cd $hellodir/src
       pytest $argv
