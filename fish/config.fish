@@ -143,9 +143,7 @@ function hello
       docker compose up api
 
     case "test"
-      cd $hellodir/src
-      pytest $argv
-      cd $hellodir
+      pytest src/$argv
 
     case "manage.py"
       set manage_command $argv[1]
