@@ -139,6 +139,9 @@ function hello
     case ""
       cd $hellodir
 
+    case "test"
+      pytest $argv
+
     case "manage.py"
       set manage_command $argv[1]
       set --erase argv[1]
