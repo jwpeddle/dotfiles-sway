@@ -153,8 +153,6 @@ function hello
       switch $manage_command
         case "shell"
           $hellodir/src/manage.py shell_plus --ptipython $argv
-        case "test"
-          python $hellodir/src/manage.py test --nomigrations --no-input $argv
         case "runserver"
           $hellodir/src/manage.py runserver 0.0.0.0:3001
         case "*"
