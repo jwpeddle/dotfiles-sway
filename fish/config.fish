@@ -159,5 +159,5 @@ function hello
       end
   end
 end
-alias h "hello"
+abbr --add h hello
 complete -f -c hello -a "cd test manage.py"
