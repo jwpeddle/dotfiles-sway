@@ -140,7 +140,9 @@ function hello
       cd $hellodir
 
     case "test"
+      cd $hellodir/src
       pytest $argv
+      cd $hellodir
 
     case "manage.py"
       set manage_command $argv[1]
