@@ -156,7 +156,6 @@ function hello
         case "*"
           $hellodir/src/manage.py $manage_command $argv
       end
-
   end
 end
 abbr --add h hello
