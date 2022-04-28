@@ -163,4 +163,4 @@ function hello
   end
 end
 abbr --add h hello
-complete -f -c hello -a "cd test manage.py"
+complete -f -c hello -a "up test manage.py"
