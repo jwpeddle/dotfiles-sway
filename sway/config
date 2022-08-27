@@ -33,7 +33,7 @@ output eDP-1 scale 1 position 0,0 mode 2560x1440
 exec_always kanshi
 
 # Network manager
-exec --no-startup-id 'nm-applet --indicator'
+exec_always --no-startup-id 'nm-applet --indicator'
 
 # Notifications
 exec mako
