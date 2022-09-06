@@ -84,8 +84,8 @@ end
 set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME/ripgrep/config"
 
 # ruby
-set -x GEM_HOME "(ruby -e 'print Gem.user_dir')/bin"
-fish_add_path "$GEM_HOME"
+set -x GEM_HOME (ruby -e 'print Gem.user_dir')
+fish_add_path "$GEM_HOME/bin"
 
 # starship
 if type -q starship
