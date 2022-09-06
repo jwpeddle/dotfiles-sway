@@ -83,6 +83,12 @@ end
 # ripgrep
 set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME/ripgrep/config"
 
+# ruby
+set -x GEM_HOME "$HOME/go"
+fish_add_path "$GOPATH/bin"
+
+fish_add_path (ruby -e 'print Gem.user_dir')/bin
+
 # starship
 if type -q starship
   starship init fish | source
