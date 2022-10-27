@@ -6,6 +6,9 @@
 --type-add
 web:*.{html,css,js}*
 
+# Include hidden
+--hidden
+
 # Using glob patterns to include/exclude files or folders
 --glob=!.git/*
 #--glob=!**/migrations/*
