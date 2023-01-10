@@ -12,6 +12,7 @@ web:*.{html,css,js}*
 # Using glob patterns to include/exclude files or folders
 --glob=!.git/*
 --glob=!.mypy-cache/*
+--glob=!*.pyc
 #--glob=!**/migrations/*
 
 # or
