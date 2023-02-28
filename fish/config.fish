@@ -164,3 +164,31 @@ function hello
 end
 abbr --add h hello
 complete -f -c hello -a "up test manage.py"
+
+set nebuladir "$HOME/dev/nebula-content"
+function nebula
+  set sub_command $argv[1]
+  set --erase argv[1]
+
+  switch $sub_command
+    case ""
+      cd $nebuladir
+
+    case "up"
+      docker compose up web
+
+    case "manage.py"
+      set manage_command $argv[1]
+      set --erase argv[1]
+      switch $manage_command
+        case "shell"
+          $nebuladir/api/manage.py shell_plus --ipython $argv
+        case "runserver"
+          $nebuladir/api/manage.py runserver 0.0.0.0:10999
+        case "*"
+          $nebuladir/api/manage.py $manage_command $argv
+      end
+  end
+end
+abbr --add n nebula
+complete -f -c nebula -a "up manage.py"
