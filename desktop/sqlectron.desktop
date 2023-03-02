@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=sqlectron
-Exec=/opt/sqlectron/sqlectron %U
+Exec=/opt/sqlectron/sqlectron --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto %U
 Terminal=false
 Type=Application
 Icon=sqlectron
