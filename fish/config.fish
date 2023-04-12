@@ -192,3 +192,5 @@ function nebula
 end
 abbr --add n nebula
 complete -f -c nebula -a "up manage.py"
+
+thefuck --alias | source
