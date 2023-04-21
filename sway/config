@@ -50,7 +50,6 @@ input "type:touchpad" {
 
 input "type:keyboard" {
     xkb_options ctrl:nocaps
-    xkb_options compose:ralt
 }
 
 input "type:pointer" {
