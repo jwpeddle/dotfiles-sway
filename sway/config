@@ -44,16 +44,17 @@ gaps outer 5
 
 # Input configuration
 input "type:touchpad" {
-    tap enabled
-    scroll_factor 0.5
+    tap enabled;
+    scroll_factor 0.5;
 }
 
 input "type:keyboard" {
-    xkb_options ctrl:nocaps
+    xkb_options ctrl:nocaps;
+    xkb_options compose:ralt;
 }
 
 input "type:pointer" {
-    pointer_accel -0.75
+    pointer_accel -0.75;
 }
 
 seat seat0 xcursor_theme "Vanilla-DMZ" 64
