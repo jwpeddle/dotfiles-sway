@@ -1,5 +1,5 @@
 [core]
-	pager = "nvimpager"
+	pager = ""
 [user]
 	name = Jason Peddle
 	email = jason@typh.com
