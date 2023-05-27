@@ -5,7 +5,7 @@
 	email = jason@typh.com
 [color]
 	ui = auto
-	pager = yes
+	pager = no
 [push]
 	default = current
 [core]
