@@ -64,6 +64,10 @@ set -x GOPATH "$HOME/go"
 fish_add_path "$GOPATH/bin"
 set -x GIT_TERMINAL_PROMPT 1
 
+# neovim
+set -x DOTFILES_HOME "$HOME/dotfiles"
+set -x NVIM_HOME = "$DOTFILE_HOME/nvim"
+
 # node
 set -x NPM_CONFIG_PREFIX "$HOME/.node_modules"
 fish_add_path "$NPM_CONFIG_PREFIX/bin"
