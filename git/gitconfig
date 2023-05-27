@@ -1,11 +1,11 @@
 [core]
-	pager = ""
+	pager = "nvimpager"
 [user]
 	name = Jason Peddle
 	email = jason@typh.com
 [color]
 	ui = auto
-	pager = no
+	pager = yes
 [push]
 	default = current
 [core]
