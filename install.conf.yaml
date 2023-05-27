@@ -21,6 +21,7 @@
     ~/.config/kitty: kitty/*
     ~/.config/fish: fish/*
     ~/.config/kanshi/config: kanshi/config
+    ~/.config/lazygit: lazygit/*
     ~/.config/nvim: nvim/*
     ~/.config/pacmanfile: pacmanfile/*
     ~/.config/ripgrep/config: ripgrep/config
