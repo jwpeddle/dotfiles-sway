@@ -29,7 +29,7 @@
     ~/.config/sway/config: sway/config
     ~/.config/waybar: waybar/*
     ~/.config/wofi/style.css: wofi/style.css
-    ~/.ipython: ipython/*
+    ~/.ipython/profile_default: ipython/*
     ~/.local/share/applications: desktop/*
     ~/.pdbrc.py: pdbpp/pdbrc.py
     ~/.gitconfig: git/gitconfig
