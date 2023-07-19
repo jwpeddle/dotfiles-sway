@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Obsidian
-Exec="OBSIDIAN_USE_WAYLAND=1 /usr/bin/obsidian %U"
+Exec=env OBSIDIAN_USE_WAYLAND=1 /usr/bin/obsidian %U
 Terminal=false
 Type=Application
 Icon=obsidian
