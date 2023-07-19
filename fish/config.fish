@@ -29,6 +29,7 @@ set -x fish_term24bit 1
 function execute_fuck_or_search_history
     if test -z (commandline)
         fuck
+        commandline -i "\n"
     else
         commandline -f history-search-backward
     end
