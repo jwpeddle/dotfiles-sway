@@ -23,6 +23,18 @@ end
 # make colors work right in nvim?
 set -x fish_term24bit 1
 
+
+# ******************** Functions ********************
+
+function execute_fuck_or_search_history
+    if test -z (commandline)
+        fuck
+    else
+        commandline -f history-search-backward
+    end
+end
+
+
 # ******************** Key bindings ********************
 # fzf
 function fish_user_key_bindings
