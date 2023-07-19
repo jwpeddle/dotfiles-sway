@@ -43,7 +43,8 @@ function fish_user_key_bindings
   fzf_key_bindings
   bind -k nul "br"
   bind -M insert -k nul "br"
-  bind \cd execute_fuck_or_search_history
+  bind \e\[B execute_fuck_or_search_history
+
 end
 
 
