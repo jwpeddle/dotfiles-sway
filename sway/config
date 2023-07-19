@@ -232,7 +232,7 @@ bar {
 ### Window rules
 for_window {
   [app_id="ulauncher"] border none
-  [title="Ulauncher Preferences"] floating enable; border normal;
+  [title="Ulauncher Preferences"] floating enable
 }
 
 ### Custom keybindings
