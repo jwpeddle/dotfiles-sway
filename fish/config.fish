@@ -31,6 +31,7 @@ function fish_user_key_bindings
   fzf_key_bindings
   bind -k nul "br"
   bind -M insert -k nul "br"
+  bind \cd 'if commandline -Z; and commandline -f repaint; commandline -i "\n"; else; commandline -f down-line-or-search; end'
 end
 
 
