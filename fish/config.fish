@@ -26,15 +26,6 @@ set -x fish_term24bit 1
 
 # ******************** Functions ********************
 
-function execute_fuck_or_search_history
-    if test -z (commandline)
-        fuck
-        commandline -f repaint
-    else
-        commandline -f history-search-backward
-    end
-end
-
 
 # ******************** Key bindings ********************
 # fzf
@@ -44,8 +35,6 @@ function fish_user_key_bindings
   fzf_key_bindings
   bind -k nul "br"
   bind -M insert -k nul "br"
-  bind \e\[13\;5u execute_fuck_or_search_history
-
 end
 
 
