@@ -164,6 +164,8 @@ exec_always {
     bindsym $mod+Shift+t layout tabbed
     bindsym $mod+Shift+v layout toggle split
 
+    bindsym --to-code $mod+Alt+s exec swaymgr -s 'set spiral'
+
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
