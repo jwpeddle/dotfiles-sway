@@ -36,6 +36,9 @@ exec_always kanshi
 # Network manager
 exec_always --no-startup-id 'nm-applet --indicator'
 
+# Auto-tiling
+exec_always autotiling
+
 # Notifications
 exec mako
 
