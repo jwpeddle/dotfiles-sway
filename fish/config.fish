@@ -64,7 +64,7 @@ function pacinstall -a package category
   end
 end
 
-source $XDG_CONFIG_HOME/fish/work.fish
+source $FISH_CONFIG_HOME/work.fish
 
 
 # ******************** key bindings ********************
