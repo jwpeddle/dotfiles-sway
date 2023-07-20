@@ -33,6 +33,9 @@ output eDP-1 scale 1 position 0,0 mode 2560x1440
 # Auto-configure displays
 exec_always kanshi
 
+# Auto-tiling
+exec --no-startup-id swaymgr
+
 # Network manager
 exec_always --no-startup-id 'nm-applet --indicator'
 
