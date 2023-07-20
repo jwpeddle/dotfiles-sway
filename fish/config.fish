@@ -9,6 +9,7 @@ set -x TERM "xterm-kitty"
 # paths
 fish_add_path "$HOME/.local/bin"
 set -x XDG_CONFIG_HOME "$HOME/.config"
+set -x FISH_CONFIG_HOME "$XDG_CONFIG_HOME/.config/fish"
 
 # make capslock ctrl
 set -x XKB_DEFAULT_OPTIONS "ctrl:nocaps"
