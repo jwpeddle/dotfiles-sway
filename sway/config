@@ -35,6 +35,7 @@ exec_always kanshi
 
 # Auto-tiling
 exec --no-startup-id swaymgr
+exec swaymgr -s 'set spiral'
 
 # Network manager
 exec_always --no-startup-id 'nm-applet --indicator'
