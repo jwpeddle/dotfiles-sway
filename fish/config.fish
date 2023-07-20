@@ -25,7 +25,7 @@ end
 set -x fish_term24bit 1
 
 # vim mode
-fish_vi_key_bindings
+fish_vi_key_bindings insert
 
 # ******************** functions ********************
 function fish_mode_prompt; end
