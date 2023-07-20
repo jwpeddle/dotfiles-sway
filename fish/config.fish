@@ -69,7 +69,6 @@ source $FISH_CONFIG_HOME/work.fish
 
 
 # ******************** key bindings ********************
-# fzf
 function fish_user_key_bindings
   #fish_default_key_bindings
   fish_vi_key_bindings
