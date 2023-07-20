@@ -156,7 +156,7 @@ exec_always {
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+Shift+s layout stacking
+    bindsym $mod+Shift+s split v; layout stacking
     bindsym $mod+Shift+t layout tabbed
     bindsym $mod+Shift+v layout toggle split
 
