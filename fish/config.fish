@@ -23,85 +23,6 @@ end
 # make colors work right in nvim?
 set -x fish_term24bit 1
 
-
-# ******************** Functions ********************
-
-
-# ******************** Key bindings ********************
-# fzf
-function fish_user_key_bindings
-  fish_default_key_bindings
-  #fish_vi_key_bindings
-  fzf_key_bindings
-  bind -k nul "br"
-  bind -M insert -k nul "br"
-end
-
-
-# ******************** other configs ********************
-
-# bat
-set -x BAT_THEME "Dracula"
-set -x COLORTERM "truecolor"
-
-# direnv
-set -x DIRENV_LOG_FORMAT ""
-if type -q direnv
-  direnv hook fish | source
-end
-
-# fzf
-set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
-  --layout=reverse
-  --no-info
-  --border
-  --color=dark
-  --color=fg:-1,bg:-1,hl:#5fff87,fg+:-1,bg+:-1,hl+:#ffaf5f
-  --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
-  --preview 'bat --color=always --style=header,grid --line-range :300 {}'
-"
-set -x FZF_DEFAULT_COMMAND "fd --type file"
-set -x FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
-
-# go
-set -x GOPATH "$HOME/go"
-fish_add_path "$GOPATH/bin"
-set -x GIT_TERMINAL_PROMPT 1
-
-# neovim
-set -x DOTFILES_HOME "$HOME/dotfiles"
-set -x NVIM_HOME "$DOTFILES_HOME/nvim"
-
-# node
-set -x NPM_CONFIG_PREFIX "$HOME/.node_modules"
-fish_add_path "$NPM_CONFIG_PREFIX/bin"
-
-# python / pyenv
-set -x PYTHONDONTWRITEBYTECODE "1"
-set -x PYTHONSTARTUP "$HOME/.pythonstartup"
-
-if type -q pyenv
-  set -x PYENV_ROOT "$HOME/.pyenv"
-  fish_add_path "$PYENV_ROOT/bin"
-  status is-login; and pyenv init --path | source
-  pyenv init - | source
-  status --is-interactive; and pyenv virtualenv-init - | source
-end
-
-# ripgrep
-set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME/ripgrep/config"
-
-# ruby
-set -x GEM_HOME (ruby -e 'print Gem.user_dir')
-fish_add_path "$GEM_HOME/bin"
-
-# starship
-if type -q starship
-  starship init fish | source
-else
-  echo "starship not found"
-end
-
 # ******************** functions ********************
 function fish_mode_prompt; end
 
@@ -200,5 +121,79 @@ function nebula
 end
 abbr --add n nebula
 complete -f -c nebula -a "up manage.py"
+
+# ******************** key bindings ********************
+# fzf
+function fish_user_key_bindings
+  fish_default_key_bindings
+  #fish_vi_key_bindings
+  fzf_key_bindings
+  bind -k nul "br"
+  bind -M insert -k nul "br"
+end
+
+# ******************** other configs ********************
+
+# bat
+set -x BAT_THEME "Dracula"
+set -x COLORTERM "truecolor"
+
+# direnv
+set -x DIRENV_LOG_FORMAT ""
+if type -q direnv
+  direnv hook fish | source
+end
+
+# fzf
+set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
+  --layout=reverse
+  --no-info
+  --border
+  --color=dark
+  --color=fg:-1,bg:-1,hl:#5fff87,fg+:-1,bg+:-1,hl+:#ffaf5f
+  --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
+  --preview 'bat --color=always --style=header,grid --line-range :300 {}'
+"
+set -x FZF_DEFAULT_COMMAND "fd --type file"
+set -x FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
+
+# go
+set -x GOPATH "$HOME/go"
+fish_add_path "$GOPATH/bin"
+set -x GIT_TERMINAL_PROMPT 1
+
+# neovim
+set -x DOTFILES_HOME "$HOME/dotfiles"
+set -x NVIM_HOME "$DOTFILES_HOME/nvim"
+
+# node
+set -x NPM_CONFIG_PREFIX "$HOME/.node_modules"
+fish_add_path "$NPM_CONFIG_PREFIX/bin"
+
+# python / pyenv
+set -x PYTHONDONTWRITEBYTECODE "1"
+set -x PYTHONSTARTUP "$HOME/.pythonstartup"
+
+if type -q pyenv
+  set -x PYENV_ROOT "$HOME/.pyenv"
+  fish_add_path "$PYENV_ROOT/bin"
+  status is-login; and pyenv init --path | source
+  pyenv init - | source
+  status --is-interactive; and pyenv virtualenv-init - | source
+end
+
+# ripgrep
+set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME/ripgrep/config"
+
+# ruby
+set -x GEM_HOME (ruby -e 'print Gem.user_dir')
+fish_add_path "$GEM_HOME/bin"
+
+# starship
+if type -q starship
+  starship init fish | source
+else
+  echo "starship not found"
+end
 
 thefuck --alias | source
