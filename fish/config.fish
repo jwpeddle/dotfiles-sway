@@ -100,7 +100,7 @@ set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS
   --preview 'bat --color=always --style=header,grid --line-range :300 {}'
 "
 set -x FZF_DEFAULT_COMMAND "fd --type file"
-set -x FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
+set -x FZF_ALT_C_COMMAND "$FZF_DEFAULT_COMMAND"
 
 # go
 set -x GOPATH "$HOME/go"
