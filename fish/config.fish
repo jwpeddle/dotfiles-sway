@@ -24,8 +24,6 @@ end
 # make colors work right in nvim?
 set -x fish_term24bit 1
 
-# vim mode
-fish_vi_key_bindings insert
 
 # ******************** functions ********************
 function fish_mode_prompt; end
@@ -78,6 +76,7 @@ function fish_user_key_bindings
   fzf_key_bindings
   bind -k nul "br"
   bind -M insert -k nul "br"
+  fish_vi_key_bindings
 end
 
 # ******************** other configs ********************
