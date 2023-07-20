@@ -20,7 +20,7 @@ set $nvimterm kitty nvim term://fish -u ~/dotfiles/nvim/terminal.vim
 
 # App launcher
 #set $menu "wofi --show drun --allow-images --image-size=200 --insensitive --width=500 --lines=10"
-set $menu "ulauncher"
+set $menu "fuzzel"
 
 # Font
 font pango:DejaVu Sans Mono 10
