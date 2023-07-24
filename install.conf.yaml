@@ -16,6 +16,7 @@
       recursive: true
 
 - link:
+    ~/bin: bin/*
     ~/.config/images: images
     ~/.config/broot: broot/*
     ~/.config/kitty: kitty/*
