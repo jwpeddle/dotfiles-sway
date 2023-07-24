@@ -2,7 +2,6 @@
 
 export TERMINAL="kitty"
 export BROWSER="firefox"
-
 export GDK_BACKEND=wayland
 
 sway -d 2>sway.log
