@@ -157,5 +157,4 @@ Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
 StartupNotify=true
 Categories=Network;WebBrowser;
-Actions=new-window;new-private-window;profile-manager-window;
 StartupWMClass=firefox
